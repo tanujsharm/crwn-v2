@@ -17,16 +17,17 @@ const Navigation = () => {
           <Logo className='logo' />
         </Link>
         <div className='nav-links-container'>
-          <Link className='nav-links' to='/shop'>
-            Shop
+          <Link className='nav-link' to='/shop'>
+            SHOP
           </Link>
+
           {currentUser ? (
-            <span className='nav-links' onClick={signOutHandler}>
-              Sign Out
+            <span className='nav-link' onClick={signOutUser}>
+              SIGN OUT
             </span>
           ) : (
-            <Link className='nav-links' to='/auth'>
-              SignIn
+            <Link className='nav-link' to='/auth'>
+              SIGN IN
             </Link>
           )}
         </div>
@@ -35,5 +36,4 @@ const Navigation = () => {
     </Fragment>
   );
 };
-
 export default Navigation;
