@@ -1,4 +1,12 @@
+import Button from "../button/button.component";
 import "./cart-dropdown.styles.scss";
 
-const CardDropdown = () => {};
-export default CardDropdown;
+const CartDropdown = () => {
+  return (
+    <div className='cart-dropdown-container'>
+      <div className='cart-items' />
+      <Button>Go To CheckOUT</Button>
+    </div>
+  );
+};
+export default CartDropdown;
